@@ -45,7 +45,6 @@ end top;
 architecture Behavioral of top is
     signal slow_clock_counter : std_ulogic_vector(31 downto 0);
     signal slow_clock : std_logic;
-    signal mhz100_clock : std_logic;
 begin
 
     slow_clock_process : process (CLK100MHZ) 
