@@ -162,7 +162,9 @@ end Behavioral;
 
 ![BitstreamGenerationCompleted.png](res/BitstreamGenerationCompleted.png "Bitstream Generation Completed")
 
-![OpenTarget.png](res/OpenTarget.png "Open Hardware Manager") Vivaso asks if it is allowed to open a hardware server automatically. If the rights are granted to Vivado, Vivado will automatically connect to the Arty A7-100 board.
+![OpenTarget.png](res/OpenTarget.png "Open Hardware Manager")
+
+Vivado asks if it is allowed to open a hardware server automatically. If the rights are granted to Vivado, Vivado will automatically connect to the Arty A7-100 board.
 
 ![ProgramDevice.png](res/ProgramDevice.png "Program Device")
 
