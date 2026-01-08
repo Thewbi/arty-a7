@@ -21,6 +21,8 @@ As an IDE, Vivado is used. The specific version is Vivado 2025.1 ML Edition.
 
 ## Power Supply
 
+First of all, no external power supply is needed to program the Arty-A7 100T. The board will work correctly when powered using a Micro-USB to USB-A cable between the PC and the Arty-A7. An external power supply is only required when you want to run the board after programming without a PC or when the USB connector cannot source enough power (maybe!).
+
 Section 3 of the Arty Reference Manual PDF documents the power supply to use.
 
 To power the Arty-A7, via the Power Jack (J13) and an external power supply, the external power supply must provide between 7 and 15 Volt DC.
@@ -45,7 +47,7 @@ The created project is called 'Blinky' as the goal will be to set up a clock sou
 
 2. Create Project > Next > Project name: Blinky > Project location: adjust path here (e.g. C:/Users/lapto/dev/fpga/arty-a7/projects) > Next
 
-3. RTL Project > Check "Do not specify sources at thit time" > Next
+3. RTL Project > Check "Do not specify sources at that time" > Next
 
 4. Change to the "Boards" tab > Read the hint "To fetch the latest available boards from git repository, click on 'Refresh' button > Click the Refresh button. A loading dialog pops up. Wait for about 2 to 3 Minutes. The Dialog will disappear automatically and the list view at the bottom of the wizard is populated with board options to select from. Look for Arty-A7. ![BoardSelector_1.jpg](res/BoardSelector_1.png "Board Selector Arty-A100") The "Next" button is still deactivated. To activate it, download the configuration files from the git repository. In the "Status" Column, there is a download icon which you have to press in order to download the configuration files from the git repository onto you local machine. Once downloaded, with a selected Arty A7-100 row, the "Next" button will be enabled. Click the "Next" button to continue.
 
