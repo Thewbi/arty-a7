@@ -1,0 +1,126 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xE1CB3FC859371625",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../project_1.gen/sources_1/bd/NEORV32_TopLevel_BD",
+      "name": "NEORV32_TopLevel_BD",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.1"
+    },
+    "design_tree": {
+      "neorv32_vivado_ip_0": "",
+      "clk_wiz": "",
+      "rst_clk_wiz_100M": ""
+    },
+    "ports": {
+      "CLK100MHZ": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000"
+          }
+        }
+      },
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      }
+    },
+    "components": {
+      "neorv32_vivado_ip_0": {
+        "vlnv": "NEORV32:user:neorv32_vivado_ip:1.0",
+        "ip_revision": "1",
+        "xci_name": "NEORV32_TopLevel_BD_neorv32_vivado_ip_0_0",
+        "xci_path": "ip\\NEORV32_TopLevel_BD_neorv32_vivado_ip_0_0\\NEORV32_TopLevel_BD_neorv32_vivado_ip_0_0.xci",
+        "inst_hier_path": "neorv32_vivado_ip_0",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "DCACHE_EN": {
+            "value": "true"
+          },
+          "DMEM_EN": {
+            "value": "true"
+          },
+          "ICACHE_EN": {
+            "value": "true"
+          },
+          "IMEM_EN": {
+            "value": "true"
+          },
+          "IO_UART0_EN": {
+            "value": "true"
+          },
+          "OCD_EN": {
+            "value": "false"
+          },
+          "RISCV_ISA_M": {
+            "value": "true"
+          }
+        }
+      },
+      "clk_wiz": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "16",
+        "xci_name": "NEORV32_TopLevel_BD_clk_wiz_0",
+        "xci_path": "ip\\NEORV32_TopLevel_BD_clk_wiz_0\\NEORV32_TopLevel_BD_clk_wiz_0.xci",
+        "inst_hier_path": "clk_wiz",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "100.0"
+          }
+        }
+      },
+      "rst_clk_wiz_100M": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "ip_revision": "17",
+        "xci_name": "NEORV32_TopLevel_BD_rst_clk_wiz_100M_0",
+        "xci_path": "ip\\NEORV32_TopLevel_BD_rst_clk_wiz_100M_0\\NEORV32_TopLevel_BD_rst_clk_wiz_100M_0.xci",
+        "inst_hier_path": "rst_clk_wiz_100M",
+        "has_run_ip_tcl": "true"
+      }
+    },
+    "nets": {
+      "CLK100MHZ_1": {
+        "ports": [
+          "CLK100MHZ",
+          "clk_wiz/clk_in1"
+        ]
+      },
+      "clk_wiz_clk_out1": {
+        "ports": [
+          "clk_wiz/clk_out1",
+          "neorv32_vivado_ip_0/clk",
+          "rst_clk_wiz_100M/slowest_sync_clk"
+        ]
+      },
+      "clk_wiz_locked": {
+        "ports": [
+          "clk_wiz/locked",
+          "rst_clk_wiz_100M/dcm_locked"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "clk_wiz/reset",
+          "rst_clk_wiz_100M/ext_reset_in"
+        ]
+      },
+      "rst_clk_wiz_100M_peripheral_aresetn": {
+        "ports": [
+          "rst_clk_wiz_100M/peripheral_aresetn",
+          "neorv32_vivado_ip_0/resetn"
+        ]
+      }
+    }
+  }
+}

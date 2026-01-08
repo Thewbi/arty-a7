@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"NEORV32_TopLevel_BD": {
+			"proto_instances": {
+			}
+		}
+	}
+}

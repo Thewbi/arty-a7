@@ -1,0 +1,271 @@
+
+*** Running vivado
+    with args -log NEORV32_TopLevel_BD_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source NEORV32_TopLevel_BD_wrapper.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Tue Jan  6 18:43:22 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source NEORV32_TopLevel_BD_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lapto/dev/fpga/neorv32/rtl/system_integration/neorv32_vivado_ip_work'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top NEORV32_TopLevel_BD_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10464
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1203.473 ; gain = 493.629
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'NEORV32_TopLevel_BD_wrapper' [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/hdl/NEORV32_TopLevel_BD_wrapper.v:13]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/hdl/NEORV32_TopLevel_BD_wrapper.v:22]
+INFO: [Synth 8-6157] synthesizing module 'NEORV32_TopLevel_BD' [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/synth/NEORV32_TopLevel_BD.v:13]
+INFO: [Synth 8-6157] synthesizing module 'NEORV32_TopLevel_BD_clk_wiz_0' [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.runs/synth_1/.Xil/Vivado-24456-Laptop32/realtime/NEORV32_TopLevel_BD_clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NEORV32_TopLevel_BD_clk_wiz_0' (0#1) [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.runs/synth_1/.Xil/Vivado-24456-Laptop32/realtime/NEORV32_TopLevel_BD_clk_wiz_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/synth/NEORV32_TopLevel_BD.v:31]
+INFO: [Synth 8-6157] synthesizing module 'NEORV32_TopLevel_BD_neorv32_vivado_ip_0_0' [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.runs/synth_1/.Xil/Vivado-24456-Laptop32/realtime/NEORV32_TopLevel_BD_neorv32_vivado_ip_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NEORV32_TopLevel_BD_neorv32_vivado_ip_0_0' (0#1) [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.runs/synth_1/.Xil/Vivado-24456-Laptop32/realtime/NEORV32_TopLevel_BD_neorv32_vivado_ip_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'ocd_resetn' of module 'NEORV32_TopLevel_BD_neorv32_vivado_ip_0_0' is unconnected for instance 'neorv32_vivado_ip_0' [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/synth/NEORV32_TopLevel_BD.v:31]
+WARNING: [Synth 8-7071] port 'jtag_tdo_o' of module 'NEORV32_TopLevel_BD_neorv32_vivado_ip_0_0' is unconnected for instance 'neorv32_vivado_ip_0' [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/synth/NEORV32_TopLevel_BD.v:31]
+WARNING: [Synth 8-7071] port 'uart0_txd_o' of module 'NEORV32_TopLevel_BD_neorv32_vivado_ip_0_0' is unconnected for instance 'neorv32_vivado_ip_0' [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/synth/NEORV32_TopLevel_BD.v:31]
+WARNING: [Synth 8-7071] port 'uart0_rtsn_o' of module 'NEORV32_TopLevel_BD_neorv32_vivado_ip_0_0' is unconnected for instance 'neorv32_vivado_ip_0' [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/synth/NEORV32_TopLevel_BD.v:31]
+WARNING: [Synth 8-7023] instance 'neorv32_vivado_ip_0' of module 'NEORV32_TopLevel_BD_neorv32_vivado_ip_0_0' has 14 connections declared, but only 10 given [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/synth/NEORV32_TopLevel_BD.v:31]
+INFO: [Synth 8-6157] synthesizing module 'NEORV32_TopLevel_BD_rst_clk_wiz_100M_0' [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.runs/synth_1/.Xil/Vivado-24456-Laptop32/realtime/NEORV32_TopLevel_BD_rst_clk_wiz_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NEORV32_TopLevel_BD_rst_clk_wiz_100M_0' (0#1) [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.runs/synth_1/.Xil/Vivado-24456-Laptop32/realtime/NEORV32_TopLevel_BD_rst_clk_wiz_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'NEORV32_TopLevel_BD_rst_clk_wiz_100M_0' is unconnected for instance 'rst_clk_wiz_100M' [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/synth/NEORV32_TopLevel_BD.v:42]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'NEORV32_TopLevel_BD_rst_clk_wiz_100M_0' is unconnected for instance 'rst_clk_wiz_100M' [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/synth/NEORV32_TopLevel_BD.v:42]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'NEORV32_TopLevel_BD_rst_clk_wiz_100M_0' is unconnected for instance 'rst_clk_wiz_100M' [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/synth/NEORV32_TopLevel_BD.v:42]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'NEORV32_TopLevel_BD_rst_clk_wiz_100M_0' is unconnected for instance 'rst_clk_wiz_100M' [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/synth/NEORV32_TopLevel_BD.v:42]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_100M' of module 'NEORV32_TopLevel_BD_rst_clk_wiz_100M_0' has 10 connections declared, but only 6 given [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/synth/NEORV32_TopLevel_BD.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'NEORV32_TopLevel_BD' (0#1) [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/synth/NEORV32_TopLevel_BD.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'NEORV32_TopLevel_BD_wrapper' (0#1) [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/hdl/NEORV32_TopLevel_BD_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1310.820 ; gain = 600.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1310.820 ; gain = 600.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1310.820 ; gain = 600.977
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1310.820 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/ip/NEORV32_TopLevel_BD_neorv32_vivado_ip_0_0/NEORV32_TopLevel_BD_neorv32_vivado_ip_0_0/NEORV32_TopLevel_BD_neorv32_vivado_ip_0_0_in_context.xdc] for cell 'NEORV32_TopLevel_BD_i/neorv32_vivado_ip_0'
+Finished Parsing XDC File [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/ip/NEORV32_TopLevel_BD_neorv32_vivado_ip_0_0/NEORV32_TopLevel_BD_neorv32_vivado_ip_0_0/NEORV32_TopLevel_BD_neorv32_vivado_ip_0_0_in_context.xdc] for cell 'NEORV32_TopLevel_BD_i/neorv32_vivado_ip_0'
+Parsing XDC File [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/ip/NEORV32_TopLevel_BD_clk_wiz_0/NEORV32_TopLevel_BD_clk_wiz_0/NEORV32_TopLevel_BD_clk_wiz_0_in_context.xdc] for cell 'NEORV32_TopLevel_BD_i/clk_wiz'
+Finished Parsing XDC File [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/ip/NEORV32_TopLevel_BD_clk_wiz_0/NEORV32_TopLevel_BD_clk_wiz_0/NEORV32_TopLevel_BD_clk_wiz_0_in_context.xdc] for cell 'NEORV32_TopLevel_BD_i/clk_wiz'
+Parsing XDC File [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/ip/NEORV32_TopLevel_BD_rst_clk_wiz_100M_0/NEORV32_TopLevel_BD_rst_clk_wiz_100M_0/NEORV32_TopLevel_BD_rst_clk_wiz_100M_0_in_context.xdc] for cell 'NEORV32_TopLevel_BD_i/rst_clk_wiz_100M'
+Finished Parsing XDC File [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/ip/NEORV32_TopLevel_BD_rst_clk_wiz_100M_0/NEORV32_TopLevel_BD_rst_clk_wiz_100M_0/NEORV32_TopLevel_BD_rst_clk_wiz_100M_0_in_context.xdc] for cell 'NEORV32_TopLevel_BD_i/rst_clk_wiz_100M'
+Parsing XDC File [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'ck_an_n[0]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'ck_an_p[0]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:113]
+WARNING: [Vivado 12-584] No ports matched 'ck_an_n[1]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'ck_an_p[1]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'ck_an_n[2]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'ck_an_p[2]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'ck_an_n[3]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'ck_an_p[3]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'ck_an_n[4]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'ck_an_p[4]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'ck_an_n[5]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'ck_an_p[5]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'ck_an_p[6]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:155]
+WARNING: [Vivado 12-584] No ports matched 'ck_an_n[6]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:156]
+WARNING: [Vivado 12-584] No ports matched 'ck_an_p[7]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:157]
+WARNING: [Vivado 12-584] No ports matched 'ck_an_n[7]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:158]
+WARNING: [Vivado 12-584] No ports matched 'ck_an_p[8]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:159]
+WARNING: [Vivado 12-584] No ports matched 'ck_an_n[8]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:160]
+Finished Parsing XDC File [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/NEORV32_TopLevel_BD_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/NEORV32_TopLevel_BD_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/NEORV32_TopLevel_BD_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1310.820 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1310.820 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1310.820 ; gain = 600.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1310.820 ; gain = 600.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1310.820 ; gain = 600.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1310.820 ; gain = 600.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1327.891 ; gain = 618.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1500.383 ; gain = 790.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1500.383 ; gain = 790.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1509.977 ; gain = 800.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1745.277 ; gain = 1035.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1745.277 ; gain = 1035.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1745.277 ; gain = 1035.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1745.277 ; gain = 1035.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1745.277 ; gain = 1035.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1745.277 ; gain = 1035.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------------------+----------+
+|      |BlackBox name                             |Instances |
++------+------------------------------------------+----------+
+|1     |NEORV32_TopLevel_BD_clk_wiz_0             |         1|
+|2     |NEORV32_TopLevel_BD_neorv32_vivado_ip_0_0 |         1|
+|3     |NEORV32_TopLevel_BD_rst_clk_wiz_100M_0    |         1|
++------+------------------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------------+------+
+|      |Cell                                    |Count |
++------+----------------------------------------+------+
+|1     |NEORV32_TopLevel_BD_clk_wiz             |     1|
+|2     |NEORV32_TopLevel_BD_neorv32_vivado_ip_0 |     1|
+|3     |NEORV32_TopLevel_BD_rst_clk_wiz_100M    |     1|
+|4     |IBUF                                    |     1|
++------+----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1745.277 ; gain = 1035.434
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1745.277 ; gain = 1035.434
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1745.277 ; gain = 1035.434
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1749.578 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1752.914 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 6001e80b
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1752.914 ; gain = 1251.898
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1752.914 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.runs/synth_1/NEORV32_TopLevel_BD_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file NEORV32_TopLevel_BD_wrapper_utilization_synth.rpt -pb NEORV32_TopLevel_BD_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jan  6 18:44:09 2026...

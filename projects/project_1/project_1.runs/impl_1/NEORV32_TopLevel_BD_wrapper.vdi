@@ -1,0 +1,360 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Tue Jan  6 18:44:23 2026
+# Process ID         : 28872
+# Current directory  : C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.runs/impl_1
+# Command line       : vivado.exe -log NEORV32_TopLevel_BD_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source NEORV32_TopLevel_BD_wrapper.tcl -notrace
+# Log file           : C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.runs/impl_1/NEORV32_TopLevel_BD_wrapper.vdi
+# Journal file       : C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.runs/impl_1\vivado.jou
+# Running On         : Laptop32
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 PRO 4750U with Radeon Graphics
+# CPU Frequency      : 1697 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 33639 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35787 MB
+# Available Virtual  : 14884 MB
+#-----------------------------------------------------------
+source NEORV32_TopLevel_BD_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lapto/dev/fpga/neorv32/rtl/system_integration/neorv32_vivado_ip_work'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+Command: link_design -top NEORV32_TopLevel_BD_wrapper -part xc7a100tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/ip/NEORV32_TopLevel_BD_clk_wiz_0/NEORV32_TopLevel_BD_clk_wiz_0.dcp' for cell 'NEORV32_TopLevel_BD_i/clk_wiz'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/ip/NEORV32_TopLevel_BD_neorv32_vivado_ip_0_0/NEORV32_TopLevel_BD_neorv32_vivado_ip_0_0.dcp' for cell 'NEORV32_TopLevel_BD_i/neorv32_vivado_ip_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/ip/NEORV32_TopLevel_BD_rst_clk_wiz_100M_0/NEORV32_TopLevel_BD_rst_clk_wiz_100M_0.dcp' for cell 'NEORV32_TopLevel_BD_i/rst_clk_wiz_100M'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 723.277 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 233 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/ip/NEORV32_TopLevel_BD_clk_wiz_0/NEORV32_TopLevel_BD_clk_wiz_0_board.xdc] for cell 'NEORV32_TopLevel_BD_i/clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/ip/NEORV32_TopLevel_BD_clk_wiz_0/NEORV32_TopLevel_BD_clk_wiz_0_board.xdc] for cell 'NEORV32_TopLevel_BD_i/clk_wiz/inst'
+Parsing XDC File [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/ip/NEORV32_TopLevel_BD_clk_wiz_0/NEORV32_TopLevel_BD_clk_wiz_0.xdc] for cell 'NEORV32_TopLevel_BD_i/clk_wiz/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/ip/NEORV32_TopLevel_BD_clk_wiz_0/NEORV32_TopLevel_BD_clk_wiz_0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/ip/NEORV32_TopLevel_BD_clk_wiz_0/NEORV32_TopLevel_BD_clk_wiz_0.xdc:54]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1444.602 ; gain = 581.227
+Finished Parsing XDC File [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/ip/NEORV32_TopLevel_BD_clk_wiz_0/NEORV32_TopLevel_BD_clk_wiz_0.xdc] for cell 'NEORV32_TopLevel_BD_i/clk_wiz/inst'
+Parsing XDC File [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/ip/NEORV32_TopLevel_BD_rst_clk_wiz_100M_0/NEORV32_TopLevel_BD_rst_clk_wiz_100M_0_board.xdc] for cell 'NEORV32_TopLevel_BD_i/rst_clk_wiz_100M/U0'
+Finished Parsing XDC File [c:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.gen/sources_1/bd/NEORV32_TopLevel_BD/ip/NEORV32_TopLevel_BD_rst_clk_wiz_100M_0/NEORV32_TopLevel_BD_rst_clk_wiz_100M_0_board.xdc] for cell 'NEORV32_TopLevel_BD_i/rst_clk_wiz_100M/U0'
+Parsing XDC File [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_an_n[0]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_an_p[0]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_an_n[1]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_an_p[1]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_an_n[2]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_an_p[2]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_an_n[3]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_an_p[3]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_an_n[4]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_an_p[4]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_an_n[5]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_an_p[5]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_an_p[6]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_an_n[6]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_an_p[7]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:157]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:157]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_an_n[7]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:158]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:158]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_an_p[8]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:159]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:159]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_an_n[8]'. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:160]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc:160]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.srcs/constrs_1/imports/doc/Arty_A7_100T.xdc]
+INFO: [Project 1-1714] 2 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1444.602 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 152 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 48 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 32 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 66 instances
+
+17 Infos, 30 Warnings, 30 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1444.602 ; gain = 938.648
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1444.602 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 3041dd1a4
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.158 . Memory (MB): peak = 1444.602 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 3041dd1a4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1841.836 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 3041dd1a4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1841.836 ; gain = 0.000
+Phase 1 Initialization | Checksum: 3041dd1a4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1841.836 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 3041dd1a4
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.202 . Memory (MB): peak = 1841.836 ; gain = 0.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 3041dd1a4
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.215 . Memory (MB): peak = 1841.836 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 3041dd1a4
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.217 . Memory (MB): peak = 1841.836 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 1 inverters resulting in an inversion of 3 pins
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 36fbcbcf1
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.295 . Memory (MB): peak = 1841.836 ; gain = 0.000
+Retarget | Checksum: 36fbcbcf1
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 4 cells
+INFO: [Opt 31-1021] In phase Retarget, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 34abb9c2b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.431 . Memory (MB): peak = 1841.836 ; gain = 0.000
+Constant propagation | Checksum: 34abb9c2b
+INFO: [Opt 31-389] Phase Constant propagation created 83 cells and removed 642 cells
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1841.836 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1841.836 ; gain = 0.000
+Phase 5 Sweep | Checksum: 24f297a4b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.727 . Memory (MB): peak = 1841.836 ; gain = 0.000
+Sweep | Checksum: 24f297a4b
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 4158 cells
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 24f297a4b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.738 . Memory (MB): peak = 1841.836 ; gain = 0.000
+BUFG optimization | Checksum: 24f297a4b
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 24f297a4b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.740 . Memory (MB): peak = 1841.836 ; gain = 0.000
+Shift Register Optimization | Checksum: 24f297a4b
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 24f297a4b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.742 . Memory (MB): peak = 1841.836 ; gain = 0.000
+Post Processing Netlist | Checksum: 24f297a4b
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 150e854c5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.745 . Memory (MB): peak = 1841.836 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1841.836 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 150e854c5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.753 . Memory (MB): peak = 1841.836 ; gain = 0.000
+Phase 9 Finalization | Checksum: 150e854c5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.753 . Memory (MB): peak = 1841.836 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               4  |                                              2  |
+|  Constant propagation         |              83  |             642  |                                              0  |
+|  Sweep                        |               0  |            4158  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 150e854c5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.755 . Memory (MB): peak = 1841.836 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 150e854c5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1841.836 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 150e854c5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1841.836 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1841.836 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 150e854c5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1841.836 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+40 Infos, 30 Warnings, 30 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1841.836 ; gain = 397.234
+INFO: [Vivado 12-24828] Executing command : report_drc -file NEORV32_TopLevel_BD_wrapper_drc_opted.rpt -pb NEORV32_TopLevel_BD_wrapper_drc_opted.pb -rpx NEORV32_TopLevel_BD_wrapper_drc_opted.rpx
+Command: report_drc -file NEORV32_TopLevel_BD_wrapper_drc_opted.rpt -pb NEORV32_TopLevel_BD_wrapper_drc_opted.pb -rpx NEORV32_TopLevel_BD_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.runs/impl_1/NEORV32_TopLevel_BD_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1841.836 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lapto/dev/fpga/arty-a7/projects/project_1/project_1.runs/impl_1/NEORV32_TopLevel_BD_wrapper_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1841.836 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: d56b21f6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1841.836 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: d56b21f6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1841.836 ; gain = 0.000
+ERROR: [Place 30-494] The design is empty
+Resolution: Check if opt_design has removed all the leaf cells of your design.  Check whether you have instantiated and connected all of the top level ports.
+Ending Placer Task | Checksum: d56b21f6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1841.836 ; gain = 0.000
+56 Infos, 30 Warnings, 30 Critical Warnings and 2 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Tue Jan  6 18:44:53 2026...
